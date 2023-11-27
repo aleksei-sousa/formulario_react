@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    /* background-color: rgb(59, 79, 97); */
+    background-image: url('./components/background/wallpaper.jpg');
+    background-size: cover;
+}
+#root{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.containerForm1{
+    padding: 10px 25px;
+}
+.contentForm{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    height: 530px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-image: url(/src/components/background/side_image.jpg); */
+}
+.containerSign1{
+    position: absolute;
+    height: 100%;
+    width: 65%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* z-index: 1; */
+}
+.containerForm{
+    height: 100%;
+    width: 68%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+.containerRegister{
+    height: 100%;
+    width: 65%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.sign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    justify-content: space-between;
+    transition: 1s;
+    background-color: white;
+    z-index: 1;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    justify-content: space-between;
+    background-color: white;
+    width: 90%;
+    display: none;
+}
+.tituloLogin{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: rgb(56, 170, 149);
+    font-size: 47px;
+}
+.containerSocialMidias{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.socialMidias{
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px 1px rgb(163, 163, 163);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    transition: .6s;
+    cursor: pointer;
+}
+.icone{
+    transition: .2s;
+}
+.socialMidias:hover{
+    transition: .6s;
+    background-color: black;
+    .icone{
+        transition: .2s;
+        color: rgb(255, 255, 255);
+    };
+
+}
+.containerInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 90%;
+}
+.emailAcount{
+    font-size: 15px;
+    color: #817e7e;
+    padding-top: 14px;
+}
+input[type="email"], input[type="password"], input[type="text"]{
+    height: 50px;
+    border: 0px solid white;
+    border-radius: 15px;
+    background-color: rgb(227, 227, 227);
+    padding-left: 40px;
+    font-size: 18px;
+}
+#iemail{
+}
+#ipass{
+
+}
+.recuperarSenha{
+    font-family: 'Ubuntu', sans-serif;
+    border:0px;
+    box-shadow: 0px 5px 0px -4px rgb(168, 168, 168);
+    height: 20px;
+}
+#btnLogin, #btnCadastrar{
+    background-color: rgb(56, 170, 149);
+    padding: 15px 70px;
+    border: 0px;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    transition: .6s;
+    cursor: pointer;
+}
+#btnLogin:hover, #btnCadastrar:hover{
+    background-color: rgb(15, 133, 111);
+    transition: .6s;
+}
+#idNome{
+    position: relative;
+}
+.iicone{
+    position: relative;
+    top: -48px;
+    color: #817e7e;
+    left: 14px;
+    size: 52px;
+}
+
+.sideRight {
+    animation: sideRight .9s;
+    animation-fill-mode: forwards;
+}
+@keyframes sideRight {
+    0%{
+        right: 65%;
+    }
+    50%{
+        transform: scaleX(1.5);
+    }
+
+    100%{
+        right: 0;
+    }
+}
+
+.sideLeft{
+    animation: sideLeft 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sideLeft {
+    0%{
+        left: 65%;
+    }
+    60%{
+        transform: scaleX(1.6);
+    }
+
+    100%{
+        left: 0;
+    }
+}
+
+.animacaoDireita{
+    animation: direita 1.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    z-index: 0;
+}
+.animacaoEsquerda{
+    animation: esquerda .8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    z-index: 1;
+    opacity: 1;
+}
+
+@keyframes direita {
+    100%{
+        transform: translateX(150%);
+    }
+}
+
+@keyframes esquerda {
+    0%{
+        transform: translateX(150%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.rEsquerda{
+    display: flex;
+   animation: rEsquerda 1.3s;
+   animation-timing-function: ease-out;
+   animation-fill-mode: forwards;
+
+}
+.rDireita{
+    display: flex;
+    animation: rDireita 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    z-index: 1;
+ }
+
+@keyframes rEsquerda {
+    100%{
+        transform: translateX(-180%);
+    }
+}
+
+ @keyframes rDireita {
+    0%{
+        transform: translateX(-200%);
+    }
+     100%{
+         transform: translateX(0%);
+     }
+ }
+
+
+
+
+
+
+
+
+@media screen and (max-width:750px){
+    .tituloLogin{
+        font-size: 50px;
+        line-height: 45px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .containerRegister {
+        height: 100%;
+        width: 100%;
+
+    }
+    .helloSign{
+        display: none;            
+    }
+    .containerForm{
+        width: 100%;
+    }
+    .containerSign1 {
+        width: 100%;
+        transition: 1s;
+    }
+    }

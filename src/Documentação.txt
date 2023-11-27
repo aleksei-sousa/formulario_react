@@ -1,0 +1,10 @@
+Depoide de criado o formulário e seus inputs
+
+*Prevent default:
+
+    const SignUp = (e) =>{
+        e.preventDefault
+    }
+        <form className="form" onSubmit={SignUp}>
+            <input>
+        </form>

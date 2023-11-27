@@ -1,0 +1,57 @@
+.btn_inversao{
+    top: 50%;
+    left: 17%;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 20px;
+    /* padding: 20px 75px; */
+    border: 2px solid white;
+    width: 65%;
+    cursor: pointer;
+}
+.container_hello_sign{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(/src/components/background/side_image.jpg);
+    left: 0;
+    position: absolute
+}
+.helloSign{
+    height: 100%;
+    width: 35%;
+    background-image: url(/src/components/background/side_image.jpg);
+    background-color: rgba(0, 255, 255, 0.452);
+    background-size: cover;
+    position: absolute;
+    transition: 1.3s;
+    z-index: 2;
+    right: 0;
+    overflow: hidden;
+}
+.msg_btn_inversao{
+    animation-duration: 1s;
+    animation-name : btn_inversao;
+}
+.btn{
+    font-family: helvetica;
+    font-size: 20px;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+}
+@keyframes btn_inversao {
+    0%{
+
+    }
+    30%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+
+    }
+}
