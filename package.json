@@ -2,11 +2,11 @@
   "name": "form",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://saiko1243.github.io/formulario_react",
+  "homepage": "https://aleksei-sousa.github.io/formulario_react",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
