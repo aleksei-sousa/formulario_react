@@ -1,8 +1,5 @@
 import { BiLogoGooglePlus, BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 import { useState } from "react";
-import{AiOutlineMail}       from 'react-icons/ai';
-import{BsPerson}            from 'react-icons/bs';
-import{RiLockPasswordLine}  from 'react-icons/ri';
 
 function Registrar ({verify}){
 
@@ -53,6 +50,9 @@ function Registrar ({verify}){
                           onChange={(e)=>handleChange(e)}/>
                     </div>
                     <button id="btnCadastrar" type="submit">Cadastrar</button>
+                    <div className="tem_conta">Não tem conta? 
+                      <p className="login_cadastre-se"
+                    >cadastre-se</p></div>
                 </form>
             </div>            
         </div> 

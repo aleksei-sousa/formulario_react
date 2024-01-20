@@ -32,13 +32,14 @@ function Form (){
     return(
         //https://www.wallpaperflare.com/mountains-best-for-desktop-background-wallpaper-tzpnp
         // <div className="containerForm1">
-            <div className="contentForm">
-
-                <Logar verify={verify}/>
-                <SideForm setVerify={setVerify} verify={verify} />
-                <Registrar verify={verify}/>
-                {verify}
+            <div className="container_form">
+                <div className="contentForm">
+                    <Logar verify={verify} setVerify={setVerify}/>
+                    <SideForm setVerify={setVerify} verify={verify} />
+                    <Registrar verify={verify}/>
+                    {verify}
                 
+                </div>
             </div>
         // </div>
     )

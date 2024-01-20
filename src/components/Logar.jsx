@@ -2,7 +2,12 @@ import { BiLogoGooglePlus, BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi
 import { useState, useEffect } from "react";
 
 
-function Logar ({verify}){
+function Logar ({verify, setverify}){
+
+function change () {
+    setverify(false)
+}
+
     const[conta, setConta]= useState([])
 
     function handleChange (e) {
@@ -52,6 +57,9 @@ function Logar ({verify}){
                     </div>
                     <a className="recuperarSenha">Esqueceu sua senha?</a>
                     <button id="btnLogin" type="submit">LOGIN</button>
+                    <div className="tem_conta">Não tem conta? 
+                      <p className="login_cadastre-se"
+                    >cadastre-se</p></div>
                 </form>
             </div>
         </div> 

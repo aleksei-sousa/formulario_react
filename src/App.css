@@ -19,6 +19,13 @@ a{
 .containerForm1{
     padding: 10px 25px;
 }
+.container_form{
+    
+    position: relative;
+    top: 50%;
+    padding: 30px;
+    transform: translateY(-50%);
+}
 .contentForm{
     margin: auto;
     display: flex;
@@ -28,8 +35,6 @@ a{
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     /* background-image: url(/src/components/background/side_image.jpg); */
 }
 .containerSign1{
@@ -130,7 +135,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    width: 90%;
+    width: 100%;
 }
 .emailAcount{
     font-size: 15px;
@@ -251,7 +256,6 @@ input[type="email"], input[type="password"], input[type="text"]{
    animation: rEsquerda 1.3s;
    animation-timing-function: ease-out;
    animation-fill-mode: forwards;
-
 }
 .rDireita{
     display: flex;
@@ -276,7 +280,15 @@ input[type="email"], input[type="password"], input[type="text"]{
      }
  }
 
-
+ .tem_conta{
+    display: none;
+    color: #817e7e;
+    font-family: system-ui;
+ }
+ .login_cadastre-se{
+    display: inline;
+    font-weight: 600;
+ }
 
 
 
@@ -292,10 +304,26 @@ input[type="email"], input[type="password"], input[type="text"]{
 }
 
 @media screen and (max-width:550px){
+    .rDireita {
+        width: 75%;
+    }
+    .animacaoEsquerda {
+        width: 75%;
+    }
+    .tem_conta{
+        display: block;
+    }
+    input[type="email"], input[type="password"], input[type="text"]{
+
+        padding-left: 15px;
+        font-size: 15px;
+    }
+    .tituloLogin {
+        font-size: 32px;
+    }
     .containerRegister {
         height: 100%;
         width: 100%;
-
     }
     .helloSign{
         display: none;            
