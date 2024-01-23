@@ -1,8 +1,15 @@
-# React + Vite
+# Formulário de login/cadastro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um projeto de teste em React.js, visando alguns conceitos básicos do framework.
 
-Currently, two official plugins are available:
+Objetivos:
+  * Formulário com uma transição animada.
+  * Estilização baseada em projeto no pinterest("https://br.pinterest.com/pin/635570566176617908/").
+  * Ultilizar os Hooks: useState, useEffect.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Problemas:
+  * Desorganização dos compontes JSX.
+  * Desorganização nos arquivos css.
+  * Javascript não está bem integrado.
+  * Funcionalidades pouco disponíveis para mobile.
